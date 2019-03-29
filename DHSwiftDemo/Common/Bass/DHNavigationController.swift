@@ -24,11 +24,11 @@ class DHNavigationController: UINavigationController {
     }
     
     override var prefersStatusBarHidden: Bool{
-        return self.topViewController?.prefersStatusBarHidden ?? false
+        return topViewController?.prefersStatusBarHidden ?? false
     }
     
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
-        if self.viewControllers.count > 0 {
+        if viewControllers.count > 0 {
             viewController.hidesBottomBarWhenPushed = true
         }
         super.pushViewController(viewController, animated: animated)
@@ -39,22 +39,22 @@ class DHNavigationController: UINavigationController {
 extension UINavigationController {
     
     public func setBackgroundColor(color: UIColor = UIColor.clear) {
-        self.navigationBar.setBackgroundImage(UIImage.imageByColor(color: color), for: .default)
+        navigationBar.setBackgroundImage(UIImage.imageByColor(color: color), for: .default)
     }
     
     public func setShadowColor(color: UIColor = UIColor.white) {
-        self.navigationBar.shadowImage = UIImage.imageByColor(color: color)
+        navigationBar.shadowImage = UIImage.imageByColor(color: color)
     }
     
     public func setTitleAttributes(attributes: [NSAttributedString.Key : Any] = [NSAttributedStringKey.foregroundColor : UIColor.black , NSAttributedStringKey.font : UIFont.systemFont(ofSize: 17)]) {
-        self.navigationBar.titleTextAttributes = attributes
+        navigationBar.titleTextAttributes = attributes
     }
     
     public func setTitleStyle(color: UIColor = UIColor.black, fontSize: CGFloat = 17) {
         var attributes = [NSAttributedStringKey : Any]()
         attributes[NSAttributedStringKey.foregroundColor] = color
         attributes[NSAttributedStringKey.font] = UIFont.systemFont(ofSize: fontSize)
-        self.setTitleAttributes(attributes: attributes)
+        setTitleAttributes(attributes: attributes)
     }
     
 }

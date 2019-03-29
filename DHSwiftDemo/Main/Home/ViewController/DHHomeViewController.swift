@@ -15,6 +15,9 @@ class DHHomeViewController: DHBaseViewController {
 
         // Do any additional setup after loading the view.
         setupDefault()
+        statusBarHidden = true
+        setNeedsStatusBarAppearanceUpdate()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,7 +26,7 @@ class DHHomeViewController: DHBaseViewController {
     }
     
     func setupDefault() {
-        self.view.backgroundColor = UIColor.randomColor
+        view.backgroundColor = UIColor.randomColor
         print("-------------------- \(view.height)",view.width)
         let dateformatter = DateFormatter()
         dateformatter.dateFormat = "YYYY - MM - dd HH:mm:ss zzz EEEE MMMM"

@@ -28,7 +28,7 @@ class DHBaseViewController: UIViewController {
     }
     
     override var prefersStatusBarHidden: Bool{
-        return self.statusBarHidden
+        return statusBarHidden
     }
 
     override func didReceiveMemoryWarning() {
@@ -53,19 +53,19 @@ class DHBaseViewController: UIViewController {
     ///
     /// - Parameter color: 背景颜色，default UIColor.clear
     func setNavBarBackgroundColor(color: UIColor = UIColor.clear) {
-        self.navigationController?.setBackgroundColor(color: color)
+        navigationController?.setBackgroundColor(color: color)
     }
     
     func setNavBarShadowColor(color: UIColor = UIColor.clear) {
-        self.navigationController?.setShadowColor(color: color)
+        navigationController?.setShadowColor(color: color)
     }
     
     func setNavBarTranslucent(translucent: Bool = false) {
-        self.navigationController?.navigationBar.isTranslucent = translucent
+        navigationController?.navigationBar.isTranslucent = translucent
     }
     
     func setNavigationBarHidden(hidden: Bool = false, animated: Bool = true) {
-        self.navigationController?.setNavigationBarHidden(hidden, animated: true)
+        navigationController?.setNavigationBarHidden(hidden, animated: true)
     }
     
     

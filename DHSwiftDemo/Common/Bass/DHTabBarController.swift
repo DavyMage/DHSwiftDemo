@@ -36,7 +36,7 @@ class DHTabBarController: UITabBarController {
         viewContrller.tabBarItem.selectedImage = UIImage(named: selectImage)
 //        viewContrller.tabBarItem.titlePositionAdjustment = UIOffsetMake(0, -3)
         let nav = DHNavigationController.init(rootViewController: viewContrller)
-        self.addChildViewController(nav)
+        addChildViewController(nav)
         
     }
 
