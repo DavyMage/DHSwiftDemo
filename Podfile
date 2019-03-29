@@ -5,5 +5,6 @@ use_frameworks!
 target 'DHSwiftDemo' do
 
 	pod 'Alamofire', '~> 4.7'
+	pod 'SnapKit', '~> 4.0.0'
 
 end

@@ -10,6 +10,8 @@ import UIKit
 
 class DHBaseViewController: UIViewController {
 
+    // MARK: - life cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,21 +21,53 @@ class DHBaseViewController: UIViewController {
         view.borderWidth = 1.0
         view.borderColor = UIColor.randomColor
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+    }
+    
+    override var prefersStatusBarHidden: Bool{
+        return self.statusBarHidden
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    //    MARK: - private methods
+    
+    /// 默认配置
+    private func defaultConfiguration() -> Void {
+        
     }
-    */
+    
+    //    MARK: - public methods
+    
+    var statusBarHidden: Bool = false
+    
+    
+    /// 设置导航背景颜色
+    ///
+    /// - Parameter color: 背景颜色，default UIColor.clear
+    func setNavBarBackgroundColor(color: UIColor = UIColor.clear) {
+        self.navigationController?.setBackgroundColor(color: color)
+    }
+    
+    func setNavBarShadowColor(color: UIColor = UIColor.clear) {
+        self.navigationController?.setShadowColor(color: color)
+    }
+    
+    func setNavBarTranslucent(translucent: Bool = false) {
+        self.navigationController?.navigationBar.isTranslucent = translucent
+    }
+    
+    func setNavigationBarHidden(hidden: Bool = false, animated: Bool = true) {
+        self.navigationController?.setNavigationBarHidden(hidden, animated: true)
+    }
+    
+    
 
 }
