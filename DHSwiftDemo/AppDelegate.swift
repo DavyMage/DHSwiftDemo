@@ -18,8 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         window = UIWindow.init()
         window?.bounds = UIScreen.main.bounds
-        let tabController = DHTabBarController.init()
-        window?.rootViewController = tabController
+        window?.rootViewController = DHTabBarController()
         window?.makeKeyAndVisible()
         return true
     }

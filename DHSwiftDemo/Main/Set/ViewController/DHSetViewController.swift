@@ -60,7 +60,7 @@ class DHSetViewController: DHBaseViewController,UITableViewDelegate,UITableViewD
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("\((#file as NSString).lastPathComponent)-------------\(#function)---------\(#line)--------\(indexPath.row)")
         let homeViecontroller = DHHomeViewController.init()
-        self.navigationController?.pushViewController(homeViecontroller, animated: true)
+        navigationController?.pushViewController(homeViecontroller, animated: true)
     }
     
 }

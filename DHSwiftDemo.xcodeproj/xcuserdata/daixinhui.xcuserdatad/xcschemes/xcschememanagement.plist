@@ -9,9 +9,19 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>widget.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>5B1331B222530D1C003F9C13</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>5B6A77292100850600B9ED94</key>
 		<dict>
 			<key>primary</key>

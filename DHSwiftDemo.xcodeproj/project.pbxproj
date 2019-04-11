@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1AD3E9F3C5346EC3D734AB64 /* Pods_DHSwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44695F73D908CC919256EBEC /* Pods_DHSwiftDemo.framework */; };
+		5B1331B422530D1C003F9C13 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B13319F22530C25003F9C13 /* NotificationCenter.framework */; };
+		5B1331B722530D1C003F9C13 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1331B622530D1C003F9C13 /* TodayViewController.swift */; };
+		5B1331BA22530D1C003F9C13 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B1331B822530D1C003F9C13 /* MainInterface.storyboard */; };
+		5B1331BE22530D1C003F9C13 /* widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5B1331B322530D1C003F9C13 /* widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5B1331C2225499AD003F9C13 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A77422100AD7600B9ED94 /* UIColorExtensions.swift */; };
 		5B29AFF82101D871007B1D2F /* DHTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B29AFF72101D871007B1D2F /* DHTabBarController.swift */; };
 		5B29AFFA2101D8B0007B1D2F /* DHNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B29AFF92101D8B0007B1D2F /* DHNavigationController.swift */; };
 		5B29B0012101DDE4007B1D2F /* DHBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B29B0002101DDE4007B1D2F /* DHBaseViewController.swift */; };
@@ -24,9 +29,38 @@
 		5B6FEF19212D401200C5888D /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6FEF18212D401200C5888D /* StringExtensions.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		5B1331BC22530D1C003F9C13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B6A77222100850600B9ED94 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B1331B222530D1C003F9C13;
+			remoteInfo = widget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5B1331AE22530C25003F9C13 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5B1331BE22530D1C003F9C13 /* widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		3B1E5E51A8CD58E6FCB970B3 /* Pods-DHSwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DHSwiftDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DHSwiftDemo/Pods-DHSwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
 		44695F73D908CC919256EBEC /* Pods_DHSwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DHSwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B13319F22530C25003F9C13 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		5B1331B322530D1C003F9C13 /* widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = widget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B1331B622530D1C003F9C13 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		5B1331B922530D1C003F9C13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		5B1331BB22530D1C003F9C13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B29AFF72101D871007B1D2F /* DHTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHTabBarController.swift; sourceTree = "<group>"; };
 		5B29AFF92101D8B0007B1D2F /* DHNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHNavigationController.swift; sourceTree = "<group>"; };
 		5B29B0002101DDE4007B1D2F /* DHBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHBaseViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +82,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5B1331B022530D1C003F9C13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B1331B422530D1C003F9C13 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5B6A77272100850600B9ED94 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -59,6 +101,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B1331B522530D1C003F9C13 /* widget */ = {
+			isa = PBXGroup;
+			children = (
+				5B1331B622530D1C003F9C13 /* TodayViewController.swift */,
+				5B1331B822530D1C003F9C13 /* MainInterface.storyboard */,
+				5B1331BB22530D1C003F9C13 /* Info.plist */,
+			);
+			path = widget;
+			sourceTree = "<group>";
+		};
 		5B29AFF32101D79D007B1D2F /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				5B6A772C2100850600B9ED94 /* DHSwiftDemo */,
+				5B1331B522530D1C003F9C13 /* widget */,
 				5B6A772B2100850600B9ED94 /* Products */,
 				FE3AEB2EF03DE408A2F06408 /* Pods */,
 				E15BA1EE88F314CF71204B14 /* Frameworks */,
@@ -174,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				5B6A772A2100850600B9ED94 /* DHSwiftDemo.app */,
+				5B1331B322530D1C003F9C13 /* widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -208,6 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				44695F73D908CC919256EBEC /* Pods_DHSwiftDemo.framework */,
+				5B13319F22530C25003F9C13 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -224,6 +279,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5B1331B222530D1C003F9C13 /* widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B1331BF22530D1C003F9C13 /* Build configuration list for PBXNativeTarget "widget" */;
+			buildPhases = (
+				5B1331AF22530D1C003F9C13 /* Sources */,
+				5B1331B022530D1C003F9C13 /* Frameworks */,
+				5B1331B122530D1C003F9C13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = widget;
+			productName = widget;
+			productReference = 5B1331B322530D1C003F9C13 /* widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		5B6A77292100850600B9ED94 /* DHSwiftDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B6A773C2100850700B9ED94 /* Build configuration list for PBXNativeTarget "DHSwiftDemo" */;
@@ -233,10 +305,12 @@
 				5B6A77272100850600B9ED94 /* Frameworks */,
 				5B6A77282100850600B9ED94 /* Resources */,
 				ECF66DFEE5ED1DBE48BB431D /* [CP] Embed Pods Frameworks */,
+				5B1331AE22530C25003F9C13 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5B1331BD22530D1C003F9C13 /* PBXTargetDependency */,
 			);
 			name = DHSwiftDemo;
 			productName = DHSwiftDemo;
@@ -250,10 +324,13 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = DH;
-				LastSwiftUpdateCheck = 0940;
+				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "代新辉";
 				TargetAttributes = {
+					5B1331B222530D1C003F9C13 = {
+						CreatedOnToolsVersion = 10.2;
+					};
 					5B6A77292100850600B9ED94 = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
@@ -273,11 +350,20 @@
 			projectRoot = "";
 			targets = (
 				5B6A77292100850600B9ED94 /* DHSwiftDemo */,
+				5B1331B222530D1C003F9C13 /* widget */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5B1331B122530D1C003F9C13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B1331BA22530D1C003F9C13 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5B6A77282100850600B9ED94 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -331,6 +417,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5B1331AF22530D1C003F9C13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B1331B722530D1C003F9C13 /* TodayViewController.swift in Sources */,
+				5B1331C2225499AD003F9C13 /* UIColorExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5B6A77262100850600B9ED94 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -352,7 +447,23 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		5B1331BD22530D1C003F9C13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B1331B222530D1C003F9C13 /* widget */;
+			targetProxy = 5B1331BC22530D1C003F9C13 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		5B1331B822530D1C003F9C13 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B1331B922530D1C003F9C13 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		5B6A77362100850700B9ED94 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -364,6 +475,49 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5B1331C022530D1C003F9C13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6EKHTFQG7A;
+				INFOPLIST_FILE = widget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sogou.DHSwiftDemo.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5B1331C122530D1C003F9C13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6EKHTFQG7A;
+				INFOPLIST_FILE = widget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sogou.DHSwiftDemo.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		5B6A773A2100850700B9ED94 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -482,9 +636,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 78A287D11E0BAEFCB352A080 /* Pods-DHSwiftDemo.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DFD88F82SU;
+				DEVELOPMENT_TEAM = 6EKHTFQG7A;
 				INFOPLIST_FILE = DHSwiftDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -503,9 +658,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3B1E5E51A8CD58E6FCB970B3 /* Pods-DHSwiftDemo.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DFD88F82SU;
+				DEVELOPMENT_TEAM = 6EKHTFQG7A;
 				INFOPLIST_FILE = DHSwiftDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -523,6 +679,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5B1331BF22530D1C003F9C13 /* Build configuration list for PBXNativeTarget "widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B1331C022530D1C003F9C13 /* Debug */,
+				5B1331C122530D1C003F9C13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5B6A77252100850600B9ED94 /* Build configuration list for PBXProject "DHSwiftDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
