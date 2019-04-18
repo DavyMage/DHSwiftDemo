@@ -87,6 +87,7 @@ extension DHBaseViewController {
     
     struct Keys {
         static var leftTitleKey : String = "leftTitleKey"
+        static var leftImageName : String = "leftImageName"
     }
     
     open var leftTitle: String {
@@ -95,6 +96,15 @@ extension DHBaseViewController {
         }
         set{
             objc_setAssociatedObject(self, &Keys.leftTitleKey, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
+        }
+    }
+    
+    open var leftImageName: String {
+        get{
+            return objc_getAssociatedObject(self, &Keys.leftImageName) as! String
+        }
+        set{
+            objc_setAssociatedObject(self, &Keys.leftImageName, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
         }
     }
     
